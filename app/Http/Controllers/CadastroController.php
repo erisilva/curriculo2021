@@ -80,7 +80,7 @@ class CadastroController extends Controller
             'declaro3' => 'required',
             'declaro4' => 'required',
             'declaro5' => 'required',
-            'arquivo1' => 'required|mimes:pdf,doc,rtf,txt|max:2000',
+            'arquivo1' => 'required|mimes:pdf,doc,rtf,txt|max:5120',
             'arquivo2' => 'mimes:pdf,doc,rtf,txt|max:5120',
             'arquivo3' => 'mimes:pdf,doc,rtf,txt|max:5120',
             'arquivo4' => 'mimes:pdf,doc,rtf,txt|max:5120',

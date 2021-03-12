@@ -164,7 +164,7 @@
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Comprovante de experiência como trabalhador ou gestor na área a qual irá concorrer, nos termos do edital</td>
+              <td>Comprovante de experiência</td>
               <td>
                 @if (isset($curriculo->arquivo1Url))
                 <a class="btn btn-warning btn-sm" role="button" href="{{ $curriculo->arquivo1Url }}" target="_blank">Download</a>   
@@ -219,7 +219,7 @@
             </tr>
             <tr>
               <th scope="row">6</th>
-              <td>Comprovante(s) de experiência acadêmica</td>
+              <td>Comprovante de Graduação</td>
               <td>
                 @if (isset($curriculo->arquivo6Url))
                 <a class="btn btn-warning btn-sm" role="button" href="{{ $curriculo->arquivo6Url }}" target="_blank">Download</a>   

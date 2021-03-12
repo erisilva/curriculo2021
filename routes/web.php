@@ -53,7 +53,5 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
 Route::resource('/cadastro', 'CadastroController')->only(['create', 'store', 'show', 'index']);
 
 Route::get('/curriculo/export/csv', 'CurriculoController@exportcsv')->name('curriculo.export.csv');
-Route::get('/curriculo/export/pdf', 'CurriculoController@exportpdf')->name('curriculo.export.pdf');
-Route::get('/curriculo/export/pdf/{id}/individual', 'CurriculoController@exportpdfindividual')->name('curriculo.export.pdf.individual');
 Route::resource('/curriculo', 'CurriculoController')->only(['index', 'show']);
 

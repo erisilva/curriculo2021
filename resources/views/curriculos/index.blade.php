@@ -31,7 +31,6 @@
       </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupDropOptions">
         <a class="dropdown-item" href="#" id="btnExportarCSV"><i class="fas fa-file-download"></i> Exportar Planilha</a>
-        <a class="dropdown-item" href="#" id="btnExportarPDF"><i class="fas fa-file-download"></i> Exportar PDF</a>
       </div>
     </div>
   </div>
@@ -143,9 +142,6 @@ $(document).ready(function(){
         window.open("{{ route('curriculo.export.csv') }}","_self");
     });
 
-    $('#btnExportarPDF').on('click', function(){
-        window.open("{{ route('curriculo.export.pdf') }}","_self");
-    });
 }); 
 </script>
 @endsection

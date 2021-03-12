@@ -268,7 +268,7 @@
       <div class="form-group">
         <ul class="list-group">
           <li class="list-group-item">
-            <label for="arquivo1">Comprovante de experiência como trabalhador ou gestor na área a qual irá concorrer, nos termos do edital <strong  class="text-danger">(*)</strong></label>
+            <label for="arquivo1">Comprovante de experiência como trabalhador, e/ou referência técnica de saúde mental e/ou gestor em CAPS da Infância e Juventude e/ou experiência em Supervisão Clínica Institucional <strong  class="text-danger">(*)</strong></label>
             <input type="file" class="form-control-file  {{ $errors->has('arquivo1') ? ' is-invalid' : '' }}" id="arquivo1" name="arquivo1">
             @if ($errors->has('arquivo1'))
             <div class="invalid-feedback">
@@ -313,7 +313,7 @@
             @endif
           </li>
           <li class="list-group-item">
-            <label for="arquivo6">Comprovante(s) de experiência acadêmica <strong  class="text-warning">(opcional)</strong></label>
+            <label for="arquivo6">Comprovante de Graduação <strong  class="text-warning">(opcional)</strong></label>
             <input type="file" class="form-control-file  {{ $errors->has('arquivo6') ? ' is-invalid' : '' }}" id="arquivo6" name="arquivo6">
             @if ($errors->has('arquivo6'))
             <div class="invalid-feedback">
@@ -414,7 +414,8 @@
           clearBtn: true,
           language: "pt-BR",
           autoclose: true,
-          todayHighlight: true
+          todayHighlight: true,
+          forceParse: false
       });
 
       $("#cpf").inputmask({"mask": "999.999.999-99"});

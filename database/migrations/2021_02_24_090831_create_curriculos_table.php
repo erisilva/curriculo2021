@@ -24,7 +24,7 @@ class CreateCurriculosTable extends Migration
 
             $table->enum('deficiente', ['s', 'n']);
 
-            $table->string('nomeSocial');
+            $table->string('nomeSocial')->nullable();
 
             $table->string('email');
 
